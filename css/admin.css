@@ -1,0 +1,173 @@
+.limbo-form {
+	/* Size and position */
+	width: 300px;
+	margin: 0 auto;
+	padding: 10px;
+	position: relative;
+	
+	/* Font styles */
+    font-family: 'Love Ya Like A Sister', cursive;
+	color: rgba(0,0,0, 0.6);
+	text-shadow: 0 2px 1px rgba(0,0,0,0.3);
+}
+
+.limbo-form p > span{
+    font-weight: bold;
+    float: right;
+    margin-right: 5%;
+}
+
+.limbo-form h1{
+	font-size: 28px;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: lighter ;
+    
+}
+
+.limbo-form hr{
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+    background-color: #000;
+    height: 3px;
+    border: none;
+}
+
+.limbo-form input[type=text],
+.limbo-form input[type=password],
+.limbo-form input[type=file],
+.limbo-form select,
+.limbo-form textarea {
+	/* Size and position */
+	width: calc(100%);
+	padding: 8px 4px 8px 10px;
+    margin-bottom: 10px;
+	
+	/* Styles */
+	border: 1px solid #9E6B3E; /* Fallback */
+	border: 1px solid rgba(0,0,0,0.7);
+	background: rgba(100,100,100,0.25);
+	border-radius: 2px;
+	box-shadow:
+		0 1px 0 rgba(255,255,255,0.2),
+		inset 0 1px 1px rgba(0,0,0,0.1);
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	
+	/* Font styles */
+    font-family: 'Love Ya Like A Sister', cursive;
+	color: #FFF;
+	font-size: 16px;
+}
+
+.limbo-form select{
+	background: rgba(100,100,100,0.25);
+}
+
+.limbo-form option{
+    background-color: rgba(0,0,0,1);
+}
+
+.limbo-form#page-form input[type=text],
+.limbo-form#page-form input[type=password],
+.limbo-form#page-form input[type=file],
+.limbo-form#page-form select,
+.limbo-form#page-form textarea {
+    width: 100%;
+}
+
+.limbo-form input::-webkit-input-placeholder {
+	color: rgba(37,21,26,0.6);
+	text-shadow: 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.limbo-form input:-moz-placeholder {
+	color: rgba(37,21,26,0.6);
+	text-shadow: 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.limbo-form input:-ms-input-placeholder {
+	color: rgba(37,21,26,0.6);
+	text-shadow: 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.limbo-form input[type=text]:hover,
+.limbo-form input[type=password]:hover {
+	border-color: #472C00;
+}
+
+.limbo-form input[type=text]:focus,
+.limbo-form input[type=password]:focus,
+.limbo-form input[type=submit]:focus,
+.limbo-form button:focus  {
+	box-shadow:
+		0 1px 0 rgba(255,255,255,0.3),
+		inset 0 1px 1px rgba(0,0,0,0.1),
+		0 0 0 3px rgba(255,255,255,0.25);
+	outline: none;
+}
+
+.limbo-form input[type=submit], 
+.limbo-form button {
+	/* Size and position */
+	width: 100%;
+	padding: 8px 5px;
+    margin-bottom: 5px;
+	
+	/* Styles */
+    background: linear-gradient(rgba(12, 172, 255, 0.5), rgba(0, 121, 204, 0.7));
+	border-radius: 5px;
+	border: 1px solid #003;
+	box-shadow:
+		inset 0 1px rgba(255,255,255,0.4),
+		0 2px 1px rgba(0,0,0,0.1);
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+	
+	/* Font styles */
+	color: white;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+	font-size: 16px;
+	font-weight: 400;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.limbo-form #delete-btn {
+    background: linear-gradient(rgba(255, 50, 12, 0.5), rgba(204, 0, 0, 0.7));
+}
+
+.limbo-form input[type=submit]:hover, 
+.limbo-form button:hover {
+	box-shadow:
+		inset 0 1px rgba(255,255,255,0.2),
+		inset 0 20px 30px rgba(0, 110, 193, 0.7);
+}
+
+.limbo-form #delete-btn:hover{
+	box-shadow:
+		inset 0 1px rgba(255,255,255,0.2),
+		inset 0 20px 30px rgba(192, 0, 0, 0.7);
+}
+
+/* Fallback */
+.no-boxshadow .limbo-form input[type=submit]:hover{
+	background: #594642;
+}
+
+.limbo-form label {
+	padding: 0 0 5px 2px;
+	cursor: pointer;
+}
+
+.limbo-form label:hover ~ input {
+	border-color: #333;
+}
+
+.no-placeholder .limbo-form label {
+	display: block;
+}

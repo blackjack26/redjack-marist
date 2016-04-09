@@ -1,0 +1,15 @@
+.suggestion-category{
+   float: right;
+}
+
+#needs-review{
+   color: #f1c40f;
+}
+
+#not-implemented{
+    color: rgb(200, 100, 100);
+}
+
+#implemented{
+    color: rgb(100, 200, 100);
+}

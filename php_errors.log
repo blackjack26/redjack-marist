@@ -1,0 +1,174 @@
+[09-Apr-2016 13:57:55 UTC] PHP Warning:  require(includes/connect_db.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 13:57:55 UTC] PHP Stack trace:
+[09-Apr-2016 13:57:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 13:57:55 UTC] PHP Fatal error:  require(): Failed opening required 'includes/connect_db.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 13:57:55 UTC] PHP Stack trace:
+[09-Apr-2016 13:57:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 13:57:59 UTC] PHP Warning:  require(includes/connect_db.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 13:57:59 UTC] PHP Stack trace:
+[09-Apr-2016 13:57:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 13:57:59 UTC] PHP Fatal error:  require(): Failed opening required 'includes/connect_db.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 13:57:59 UTC] PHP Stack trace:
+[09-Apr-2016 13:57:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 13:58:58 UTC] PHP Warning:  require(includes/header.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 13:58:58 UTC] PHP Stack trace:
+[09-Apr-2016 13:58:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 13:58:58 UTC] PHP Fatal error:  require(): Failed opening required 'includes/header.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 13:58:58 UTC] PHP Stack trace:
+[09-Apr-2016 13:58:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 13:58:58 UTC] PHP Warning:  require(includes/header.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 13:58:58 UTC] PHP Stack trace:
+[09-Apr-2016 13:58:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 13:58:58 UTC] PHP Fatal error:  require(): Failed opening required 'includes/header.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 13:58:58 UTC] PHP Stack trace:
+[09-Apr-2016 13:58:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 13:58:58 UTC] PHP Warning:  require(includes/header.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 13:58:58 UTC] PHP Stack trace:
+[09-Apr-2016 13:58:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 13:58:58 UTC] PHP Fatal error:  require(): Failed opening required 'includes/header.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 13:58:58 UTC] PHP Stack trace:
+[09-Apr-2016 13:58:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 13:58:59 UTC] PHP Warning:  require(includes/header.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 13:58:59 UTC] PHP Stack trace:
+[09-Apr-2016 13:58:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 13:58:59 UTC] PHP Fatal error:  require(): Failed opening required 'includes/header.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 13:58:59 UTC] PHP Stack trace:
+[09-Apr-2016 13:58:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 13:58:59 UTC] PHP Warning:  require(includes/header.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 13:58:59 UTC] PHP Stack trace:
+[09-Apr-2016 13:58:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 13:58:59 UTC] PHP Fatal error:  require(): Failed opening required 'includes/header.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 13:58:59 UTC] PHP Stack trace:
+[09-Apr-2016 13:58:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 14:03:08 UTC] PHP Warning:  require(includes/header.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 14:03:08 UTC] PHP Stack trace:
+[09-Apr-2016 14:03:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 14:03:08 UTC] PHP Fatal error:  require(): Failed opening required 'includes/header.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 14:03:08 UTC] PHP Stack trace:
+[09-Apr-2016 14:03:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 14:03:33 UTC] PHP Warning:  require(includes/connect_db.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 14:03:33 UTC] PHP Stack trace:
+[09-Apr-2016 14:03:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 14:03:33 UTC] PHP Fatal error:  require(): Failed opening required 'includes/connect_db.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/rating.php on line 2
+[09-Apr-2016 14:03:33 UTC] PHP Stack trace:
+[09-Apr-2016 14:03:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 14:03:53 UTC] PHP Warning:  require(includes/helpers.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/header.php on line 20
+[09-Apr-2016 14:03:53 UTC] PHP Stack trace:
+[09-Apr-2016 14:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 14:03:53 UTC] PHP   2. require() /home/ubuntu/workspace/includes/rating.php:3
+[09-Apr-2016 14:03:53 UTC] PHP Fatal error:  require(): Failed opening required 'includes/helpers.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/header.php on line 20
+[09-Apr-2016 14:03:53 UTC] PHP Stack trace:
+[09-Apr-2016 14:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 14:03:53 UTC] PHP   2. require() /home/ubuntu/workspace/includes/rating.php:3
+[09-Apr-2016 14:04:37 UTC] PHP Warning:  require(includes/helpers.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/header.php on line 20
+[09-Apr-2016 14:04:37 UTC] PHP Stack trace:
+[09-Apr-2016 14:04:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 14:04:37 UTC] PHP   2. require() /home/ubuntu/workspace/includes/rating.php:3
+[09-Apr-2016 14:04:37 UTC] PHP Fatal error:  require(): Failed opening required 'includes/helpers.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/header.php on line 20
+[09-Apr-2016 14:04:37 UTC] PHP Stack trace:
+[09-Apr-2016 14:04:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 14:04:37 UTC] PHP   2. require() /home/ubuntu/workspace/includes/rating.php:3
+[09-Apr-2016 14:10:40 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/includes/helpers.php on line 47
+[09-Apr-2016 14:10:40 UTC] PHP Stack trace:
+[09-Apr-2016 14:10:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 14:10:40 UTC] PHP   2. thumbsUp() /home/ubuntu/workspace/includes/rating.php:6
+[09-Apr-2016 14:10:40 UTC] PHP   3. getRecords() /home/ubuntu/workspace/includes/helpers.php:158
+[09-Apr-2016 14:10:40 UTC] PHP   4. mysqli_query() /home/ubuntu/workspace/includes/helpers.php:47
+[09-Apr-2016 14:10:40 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/includes/helpers.php on line 51
+[09-Apr-2016 14:10:40 UTC] PHP Stack trace:
+[09-Apr-2016 14:10:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 14:10:40 UTC] PHP   2. thumbsUp() /home/ubuntu/workspace/includes/rating.php:6
+[09-Apr-2016 14:10:40 UTC] PHP   3. getRecords() /home/ubuntu/workspace/includes/helpers.php:158
+[09-Apr-2016 14:10:40 UTC] PHP   4. mysqli_free_result() /home/ubuntu/workspace/includes/helpers.php:51
+[09-Apr-2016 14:10:40 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/includes/helpers.php on line 158
+[09-Apr-2016 14:10:40 UTC] PHP Stack trace:
+[09-Apr-2016 14:10:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 14:10:40 UTC] PHP   2. thumbsUp() /home/ubuntu/workspace/includes/rating.php:6
+[09-Apr-2016 14:10:40 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/includes/helpers.php:158
+[09-Apr-2016 14:10:40 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/includes/helpers.php on line 164
+[09-Apr-2016 14:10:40 UTC] PHP Stack trace:
+[09-Apr-2016 14:10:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 14:10:40 UTC] PHP   2. thumbsUp() /home/ubuntu/workspace/includes/rating.php:6
+[09-Apr-2016 14:10:40 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/includes/helpers.php:164
+[09-Apr-2016 15:57:58 UTC] PHP Fatal error:  Call to undefined function thumbsUp() in /home/ubuntu/workspace/includes/rating.php on line 7
+[09-Apr-2016 15:57:58 UTC] PHP Stack trace:
+[09-Apr-2016 15:57:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 15:58:08 UTC] PHP Fatal error:  Call to undefined function thumbsUp() in /home/ubuntu/workspace/includes/rating.php on line 7
+[09-Apr-2016 15:58:08 UTC] PHP Stack trace:
+[09-Apr-2016 15:58:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 15:58:11 UTC] PHP Fatal error:  Call to undefined function thumbsUp() in /home/ubuntu/workspace/includes/rating.php on line 7
+[09-Apr-2016 15:58:11 UTC] PHP Stack trace:
+[09-Apr-2016 15:58:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 15:58:12 UTC] PHP Fatal error:  Call to undefined function thumbsUp() in /home/ubuntu/workspace/includes/rating.php on line 7
+[09-Apr-2016 15:58:12 UTC] PHP Stack trace:
+[09-Apr-2016 15:58:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 15:58:13 UTC] PHP Fatal error:  Call to undefined function thumbsUp() in /home/ubuntu/workspace/includes/rating.php on line 7
+[09-Apr-2016 15:58:13 UTC] PHP Stack trace:
+[09-Apr-2016 15:58:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 15:58:51 UTC] PHP Fatal error:  Call to undefined function thumbsUp() in /home/ubuntu/workspace/includes/rating.php on line 7
+[09-Apr-2016 15:58:51 UTC] PHP Stack trace:
+[09-Apr-2016 15:58:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 17:27:32 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/includes/helpers.php on line 67
+[09-Apr-2016 17:27:32 UTC] PHP Stack trace:
+[09-Apr-2016 17:27:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 17:27:32 UTC] PHP   2. voteExists() /home/ubuntu/workspace/includes/rating.php:12
+[09-Apr-2016 17:27:32 UTC] PHP   3. mysqli_free_result() /home/ubuntu/workspace/includes/helpers.php:67
+[09-Apr-2016 17:28:07 UTC] PHP Warning:  mysqli_fetch_array(): Couldn't fetch mysqli_result in /home/ubuntu/workspace/includes/helpers.php on line 199
+[09-Apr-2016 17:28:07 UTC] PHP Stack trace:
+[09-Apr-2016 17:28:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 17:28:07 UTC] PHP   2. thumbsUp() /home/ubuntu/workspace/includes/rating.php:15
+[09-Apr-2016 17:28:07 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/includes/helpers.php:199
+[09-Apr-2016 17:30:15 UTC] PHP Warning:  mysqli_fetch_array(): Couldn't fetch mysqli_result in /home/ubuntu/workspace/includes/helpers.php on line 199
+[09-Apr-2016 17:30:15 UTC] PHP Stack trace:
+[09-Apr-2016 17:30:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 17:30:15 UTC] PHP   2. thumbsUp() /home/ubuntu/workspace/includes/rating.php:14
+[09-Apr-2016 17:30:15 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/includes/helpers.php:199
+[09-Apr-2016 17:30:40 UTC] PHP Warning:  mysqli_fetch_array(): Couldn't fetch mysqli_result in /home/ubuntu/workspace/includes/helpers.php on line 199
+[09-Apr-2016 17:30:40 UTC] PHP Stack trace:
+[09-Apr-2016 17:30:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 17:30:40 UTC] PHP   2. thumbsUp() /home/ubuntu/workspace/includes/rating.php:14
+[09-Apr-2016 17:30:40 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/includes/helpers.php:199
+[09-Apr-2016 17:30:49 UTC] PHP Warning:  mysqli_fetch_array(): Couldn't fetch mysqli_result in /home/ubuntu/workspace/includes/helpers.php on line 199
+[09-Apr-2016 17:30:49 UTC] PHP Stack trace:
+[09-Apr-2016 17:30:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 17:30:49 UTC] PHP   2. thumbsUp() /home/ubuntu/workspace/includes/rating.php:14
+[09-Apr-2016 17:30:49 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/includes/helpers.php:199
+[09-Apr-2016 17:32:13 UTC] PHP Warning:  mysqli_fetch_array(): Couldn't fetch mysqli_result in /home/ubuntu/workspace/includes/helpers.php on line 199
+[09-Apr-2016 17:32:13 UTC] PHP Stack trace:
+[09-Apr-2016 17:32:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 17:32:13 UTC] PHP   2. thumbsUp() /home/ubuntu/workspace/includes/rating.php:14
+[09-Apr-2016 17:32:13 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/includes/helpers.php:199
+[09-Apr-2016 17:32:21 UTC] PHP Warning:  mysqli_fetch_array(): Couldn't fetch mysqli_result in /home/ubuntu/workspace/includes/helpers.php on line 199
+[09-Apr-2016 17:32:21 UTC] PHP Stack trace:
+[09-Apr-2016 17:32:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 17:32:21 UTC] PHP   2. thumbsUp() /home/ubuntu/workspace/includes/rating.php:14
+[09-Apr-2016 17:32:21 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/includes/helpers.php:199
+[09-Apr-2016 17:32:55 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/ubuntu/workspace/includes/helpers.php on line 199
+[09-Apr-2016 17:32:55 UTC] PHP Stack trace:
+[09-Apr-2016 17:32:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 17:32:55 UTC] PHP   2. thumbsUp() /home/ubuntu/workspace/includes/rating.php:14
+[09-Apr-2016 17:36:53 UTC] PHP Warning:  mysqli_fetch_array(): Couldn't fetch mysqli_result in /home/ubuntu/workspace/includes/helpers.php on line 198
+[09-Apr-2016 17:36:53 UTC] PHP Stack trace:
+[09-Apr-2016 17:36:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 17:36:53 UTC] PHP   2. thumbsUp() /home/ubuntu/workspace/includes/rating.php:14
+[09-Apr-2016 17:36:53 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/includes/helpers.php:198
+[09-Apr-2016 17:36:58 UTC] PHP Warning:  mysqli_fetch_array(): Couldn't fetch mysqli_result in /home/ubuntu/workspace/includes/helpers.php on line 198
+[09-Apr-2016 17:36:58 UTC] PHP Stack trace:
+[09-Apr-2016 17:36:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 17:36:58 UTC] PHP   2. thumbsUp() /home/ubuntu/workspace/includes/rating.php:14
+[09-Apr-2016 17:36:58 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/includes/helpers.php:198
+[09-Apr-2016 17:37:50 UTC] PHP Warning:  mysqli_fetch_array(): Couldn't fetch mysqli_result in /home/ubuntu/workspace/includes/helpers.php on line 198
+[09-Apr-2016 17:37:50 UTC] PHP Stack trace:
+[09-Apr-2016 17:37:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 17:37:50 UTC] PHP   2. thumbsUp() /home/ubuntu/workspace/includes/rating.php:14
+[09-Apr-2016 17:37:50 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/includes/helpers.php:198
+[09-Apr-2016 17:37:52 UTC] PHP Warning:  mysqli_fetch_array(): Couldn't fetch mysqli_result in /home/ubuntu/workspace/includes/helpers.php on line 212
+[09-Apr-2016 17:37:52 UTC] PHP Stack trace:
+[09-Apr-2016 17:37:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 17:37:52 UTC] PHP   2. thumbsDown() /home/ubuntu/workspace/includes/rating.php:17
+[09-Apr-2016 17:37:52 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/includes/helpers.php:212
+[09-Apr-2016 17:37:54 UTC] PHP Warning:  mysqli_fetch_array(): Couldn't fetch mysqli_result in /home/ubuntu/workspace/includes/helpers.php on line 212
+[09-Apr-2016 17:37:54 UTC] PHP Stack trace:
+[09-Apr-2016 17:37:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/rating.php:0
+[09-Apr-2016 17:37:54 UTC] PHP   2. thumbsDown() /home/ubuntu/workspace/includes/rating.php:17
+[09-Apr-2016 17:37:54 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/includes/helpers.php:212
