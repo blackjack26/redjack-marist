@@ -15,27 +15,28 @@
         </div>
         
         <h3 id="msg-sub">Vote to help suggest!</h3>
-        
         <div id="suggestion-container">
             <?php
             while( $row = mysqli_fetch_array( $suggestionData, MYSQLI_ASSOC ) ){
             ?>
                 <div class="suggestion-box" data-title="<?= $row['title'] ?>" data-content="<?= $row['content'] ?>" data-fname="<?= $row['fname'] ?>" data-lname="<?= $row['lname'] ?>" data-postdate="<?= $row['post_date'] ?>">
-                    <div class="rating-box">
-                        <p class="up-rating" data-id="<?= $row['id'] ?>"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <num><?php echo $row['up']; ?></num></p>
-                        <p class="down-rating" data-id="<?= $row['id'] ?>"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> <num><?php echo $row['down']; ?></num></p>
-                    </div>
-                    
-                    <div class="content-box">
-                        <p class="suggestion-title"><?php echo $row['title']; ?></p>
-                        <p class="suggestion-content">
-                            <?php
-                            if(strlen ($row['content']) > 40)
-                                echo substr($row['content'], 0, 40) . "...";
-                            else
-                                echo $row['content'];
-                            ?>
-                        </p>
+                    <div class="sugg-border-box">
+                        <div class="rating-box">
+                            <p class="up-rating" data-id="<?= $row['id'] ?>"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <num><?php echo $row['up']; ?></num></p>
+                            <p class="down-rating" data-id="<?= $row['id'] ?>"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> <num><?php echo $row['down']; ?></num></p>
+                        </div>
+                        
+                        <div class="content-box">
+                            <p class="suggestion-title"><?php echo $row['title']; ?></p>
+                            <p class="suggestion-content">
+                                <?php
+                                if(strlen ($row['content']) > 40)
+                                    echo substr($row['content'], 0, 40) . "...";
+                                else
+                                    echo $row['content'];
+                                ?>
+                            </p>
+                        </div>
                     </div>
                 </div>
             <?php  

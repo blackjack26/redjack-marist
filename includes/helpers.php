@@ -155,7 +155,7 @@ function getRecordsTable( $table ){
 
 function getTrending(){
     global $dbc;
-    $query = "SELECT * FROM suggestions WHERE reviewed = 0 ORDER BY up DESC";
+    $query = "SELECT * FROM suggestions WHERE reviewed = 0 ORDER BY up DESC, down ASC";
     $results = mysqli_query( $dbc, $query );
     if($results){
         return $results;

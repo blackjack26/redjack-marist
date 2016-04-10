@@ -66,12 +66,16 @@
 .suggestion-box{
     margin: 10px 10px;
     background-color: rgba(255,255,255,0.8);
-    padding: 10px;
     box-shadow: 0px 0px 6px -2px rgba(0,0,0,0.4);
     border-radius: 0.5em;
     width: calc(100% - 20px);
     white-space: nowrap;
     overflow: hidden;
+}
+
+.sugg-border-box{
+    
+    margin: 10px;
 }
 
 .suggestion-box p{
@@ -82,6 +86,7 @@
 .rating-box{
     width: auto;
     display: inline-block;
+    float: left;
 }
 
 .up-rating{
@@ -98,7 +103,21 @@
     display: inline-block;
     width: 100%;
     max-width: calc(100% - 65px);
+    white-space: nowrap;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
 }
+
+#feed-content{
+    max-width: 100%;
+}
+
+.content-box .panel-body{
+    white-space: normal;
+}
+
+.content-box::-webkit-scrollbar { width: 0 !important }
 
 .content-box .suggestion-title{
     font-weight: bold;

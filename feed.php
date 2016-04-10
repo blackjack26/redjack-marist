@@ -40,19 +40,21 @@
             if($userDivision == "" || $row['category'] == $userDivision || $row['category'] == "Other"){
         ?>
             <div style="<?php if($row['duplicate'] == 1) echo 'background-color:rgba(210,210,210,0.6);'; ?>" class="suggestion-box" data-im="<?= $row['implemented'] ?>" data-id="<?= $row['id'] ?>" data-title="<?= $row['title'] ?>" data-content="<?= $row['content'] ?>" data-category="<?= $row['category'] ?>">
-                
+                <div class="sugg-border-box">
                 <p style="font-style:italic" class="suggestion-category"> <?php echo $row['category']; ?> </p>
                 <br>
-                <p class="suggestion-title"><b>Title: </b><?php echo $row['title']; ?></p>
-                <p class="suggestion-content">
-                    <?php 
-                    if(strlen ($row['content']) > 40)
-                        echo "<b>Suggestion:</b> " . substr($row['content'], 0, 40) . "...";
-                    else
-                        echo "<b>Suggestion:</b> " . $row['content'];
-                    ?> 
-                </p> 
-               
+                
+                <div class="content-box" id="feed-content">
+                    <p class="suggestion-title"><b>Title: </b><?php echo $row['title']; ?></p>
+                    <p class="suggestion-content">
+                        <?php 
+                        if(strlen ($row['content']) > 40)
+                            echo "<b>Suggestion:</b> " . substr($row['content'], 0, 40) . "...";
+                        else
+                            echo "<b>Suggestion:</b> " . $row['content'];
+                        ?> 
+                    </p> 
+               </div>
                <?php 
                 if($row['reviewed'] == 0){
                     echo '<p id="needs-review"><span id="needs-review-btn" class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Not Reviewed</p>';
@@ -73,7 +75,7 @@
                 
                 <br />
                 <a class="discussion-link">See discussion</a>
-                
+                </div>
             </div>
         <?php  
             }
@@ -151,10 +153,10 @@
         
         $(".discussion-link").click(function(e){
             post("discussion.php", { 
-                id: $(this).parent().data("id"),
-                title: $(this).parent().data("title"),
-                content: $(this).parent().data("content"),
-                category: $(this).parent().data("category")
+                id: $(this).parent().parent().data("id"),
+                title: $(this).parent().parent().data("title"),
+                content: $(this).parent().parent().data("content"),
+                category: $(this).parent().parent().data("category")
             }); 
             e.stopPropagation();
         });

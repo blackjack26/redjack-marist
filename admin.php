@@ -44,12 +44,44 @@
             <input type="hidden" name="add_admin" value="true" />
         </form>
         <h3 class="form_header">Remove Admin</h3>
-        <form action="admin.php" method="POST">
+        <form style="margin:10px" action="admin.php" method="POST">
             <label for="username">Username*</label><br />
     		<input required id="username" placeholder="Username" class="form-control" name="username" type="text" value="" size="30" /><br />
             <input type="hidden" name="remove_admin" value="true" />
     		
     	    <input class="btn btn-danger" type="submit" value="Remove Admin">
         </form>
+        
+        <?php
+            $users = getQuery("SELECT * FROM users WHERE role = 'Admin';");
+        ?>
+        
+        <h2 style="margin-left:15px">Admin Table</h2>
+        <div style="width:100%;overflow-x:scroll" class="container">
+          <table class="table table-responsive table-hover table-striped" >
+            <thead>
+              <tr>
+                <th>Username</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Division</th>
+              </tr>
+            </thead>
+            <tbody>
+                
+            <?php while( $row = mysqli_fetch_array($users, MYSQLI_ASSOC ) ){ ?>
+              <tr>
+                <td><?php echo $row['username']; ?></td>
+                <td><?php echo $row['fname']; ?></td>
+                <td><?php echo $row['lname']; ?></td>
+                <td><?php echo $row['email']; ?></td>
+                <td><?php echo $row['division']; ?></td>
+              </tr>
+            <?php } ?>
+            </tbody>
+          </table>
+        </div>
+
     </body>
 </html>

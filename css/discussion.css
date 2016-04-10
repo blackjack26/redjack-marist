@@ -70,6 +70,12 @@
 #my-panel-primary{
     border: none;
     box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+    height: 50%;
+    margin: 10px;
+}
+
+#my-panel-primary .panel-body{
+    height: calc(100% - 94px);
 }
 
 #btn-chat{
