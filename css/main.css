@@ -182,7 +182,17 @@
 #search-box{
     margin: 10px;
     z-index: 1;
+  
 }
+#search-bar{
+      border-radius: 9px;
+    
+}
+#search-btn{
+    border-radius: 8px;
+
+}
+    
 
 #msg-sub{
     text-align: center;

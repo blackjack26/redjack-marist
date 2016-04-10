@@ -28,3 +28,10 @@
         display: none;
     }
 }
+
+.discussion-link{
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+}

@@ -3,14 +3,15 @@ error_reporting(E_ERROR);
 function addNewUser ( $infoArray ){
     global $dbc;
     
-    $fname = ucfirst(strtolower(trim($infoArray['fname'])));
-    $lname = ucfirst(strtolower(trim($infoArray['lname'])));
-    $username = $infoArray['username'];
-    $password = $infoArray['password'];
-    $email = trim($infoArray['email']);
+    $fname = mysqli_real_escape_string($dbc,ucfirst(strtolower(trim($infoArray['fname']))));
+    $lname = mysqli_real_escape_string($dbc,ucfirst(strtolower(trim($infoArray['lname']))));
+    $username = mysqli_real_escape_string($dbc, trim($infoArray['username']));
+    $password = mysqli_real_escape_string($dbc, trim($infoArray['password']));
+    $email = mysqli_real_escape_string($dbc, trim($infoArray['email']));
     $role = $infoArray['role'];
+    $division = $infoArray['division'];
     
-    $query = "INSERT INTO users VALUES (null, '$fname', '$lname', '$username', SHA2('$password', 224), '$email', '$role');";
+    $query = "INSERT INTO users VALUES (null, '$fname', '$lname', '$username', SHA2('$password', 224), '$email', '$role', '$division');";
     $results = mysqli_query( $dbc, $query );
     
     if(!$results){
@@ -21,10 +22,25 @@ function addNewUser ( $infoArray ){
     }
 }
 
+function deleteAdmin($username){
+    global $dbc;
+    $sanitized = mysqli_real_escape_string($dbc, trim($username));
+    $query = "DELETE FROM users WHERE username = '$sanitized' AND role='Admin';";
+    $results = mysqli_query( $dbc, $query );
+    if(!$results){
+        echo 'Error Deleting User';
+        return true;
+    }
+    return false;
+}
+
 function addFeedback($title, $content, $username, $suggestionId, $implemented){
     global $dbc;
     
-    $query = "INSERT INTO feedback VALUES (null, '$title', '$content', '$username', NOW(), '$suggestionId');";
+    $sanitized = mysqli_real_escape_string($dbc, trim($content));
+    $sanitizedT = mysqli_real_escape_string($dbc, trim($title));
+    
+    $query = "INSERT INTO feedback VALUES (null, '$sanitizedT', '$sanitized', '$username', NOW(), '$suggestionId');";
     $results = mysqli_query($dbc, $query);
     
     if(!$results){
@@ -38,6 +54,7 @@ function updateSuggestion($sid, $implemented){
     global $dbc;
     
     $query = "UPDATE suggestions SET reviewed = 1, implemented = $implemented WHERE id = $sid;";
+    echo $query;
     $results = mysqli_query($dbc, $query);
 }
 
@@ -45,8 +62,9 @@ function addSuggestion($title, $content, $fname, $lname, $email, $category, $cla
     global $dbc;
     
     $sanitized = mysqli_real_escape_string($dbc, trim($content));
+    $sanitizedT = mysqli_real_escape_string($dbc, trim($title));
     
-    $query = "INSERT INTO suggestions VALUES (null, '$title', '$sanitized', NOW(), '$fname', '$lname', '$email', '$category', 0, 0, 0, 0, '$class', $duplicate);";
+    $query = "INSERT INTO suggestions VALUES (null, '$sanitizedT', '$sanitized', NOW(), '$fname', '$lname', '$email', '$category', 0, 0, 0, 0, '$class', $duplicate);";
     $results = mysqli_query($dbc, $query);
     if(!$results){
         header("Location: index.php?success=false&msg=suggestion");
@@ -70,6 +88,18 @@ function addVote($uId, $sId, $up, $down){
     
     if(!$results){
         echo 'Error Adding Vote: ' . $query;
+    }
+}
+
+function addDiscussionMsg($uid, $sid, $message){
+    global $dbc;
+    
+    $sanitized = mysqli_real_escape_string($dbc, trim($message));
+    $query = "INSERT INTO discussion VALUES ($uid, $sid, '$sanitized', NOW());";
+    $results = mysqli_query($dbc, $query);
+    
+    if(!$results){
+        echo 'Error Adding Message: ' . $query;
     }
 }
 

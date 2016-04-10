@@ -71,6 +71,9 @@
                 <p style="display:inline-block; font-size: 14px; float:right" class="down-rating"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> <num><?php echo $row['down']; ?></num></p>
                 <p style="display:inline-block; font-size: 14px; float:right" class="up-rating"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <num><?php echo $row['up']; ?></num></p>
                 
+                <br />
+                <a class="discussion-link">See discussion</a>
+                
             </div>
         <?php  
             }
@@ -144,6 +147,16 @@
                     category: $(this).data("category")
                 }); 
             }
+        });
+        
+        $(".discussion-link").click(function(e){
+            post("discussion.php", { 
+                id: $(this).parent().data("id"),
+                title: $(this).parent().data("title"),
+                content: $(this).parent().data("content"),
+                category: $(this).parent().data("category")
+            }); 
+            e.stopPropagation();
         });
         
         function post(path, params, method) {

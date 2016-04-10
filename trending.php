@@ -8,9 +8,9 @@
     <body>
         <br />
         <div id="search-box" class="input-group">
-          <input type="text" class="form-control" placeholder="Search for...">
+          <input type="text" id = 'search-bar' class="form-control" placeholder="Search for...">
           <span class="input-group-btn">
-            <button id="search-btn" class="btn btn-default" type="button">Go!</button>
+            <button id="search-btn" class="btn btn-default" type="button">Search</button>
           </span>
         </div>
         

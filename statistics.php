@@ -96,6 +96,7 @@
     <!-- Bar Graph Total -->
     <input type="hidden" id="b-studlife" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Student Life';")['COUNT(*)']; ?>" />
     <input type="hidden" id="b-admin" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Administration';")['COUNT(*)']; ?>" />
+    <input type="hidden" id="b-athl" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Athletics';")['COUNT(*)']; ?>" />
     <input type="hidden" id="b-acad" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Academics';")['COUNT(*)']; ?>" />
     <input type="hidden" id="b-house" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Housing';")['COUNT(*)']; ?>" />
     <input type="hidden" id="b-safe" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Safety';")['COUNT(*)']; ?>" />
@@ -105,6 +106,7 @@
     <input type="hidden" id="b-studlife-im" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Student Life' AND implemented = 1;")['COUNT(*)']; ?>" />
     <input type="hidden" id="b-admin-im" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Administration' AND implemented = 1;")['COUNT(*)']; ?>" />
     <input type="hidden" id="b-acad-im" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Academics' AND implemented = 1;")['COUNT(*)']; ?>" />
+    <input type="hidden" id="b-athl-im" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Athletics' AND implemented = 1;")['COUNT(*)']; ?>" />
     <input type="hidden" id="b-house-im" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Housing' AND implemented = 1;")['COUNT(*)']; ?>" />
     <input type="hidden" id="b-safe-im" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Safety' AND implemented = 1;")['COUNT(*)']; ?>" />
     <input type="hidden" id="b-other-im" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Other' AND implemented = 1;")['COUNT(*)']; ?>" />
@@ -113,6 +115,7 @@
     <input type="hidden" id="b-studlife-notim" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Student Life' AND implemented = 0 AND reviewed = 1;")['COUNT(*)']; ?>" />
     <input type="hidden" id="b-admin-notim" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Administration' AND implemented = 0 AND reviewed = 1;")['COUNT(*)']; ?>" />
     <input type="hidden" id="b-acad-notim" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Academics' AND implemented = 0 AND reviewed = 1;")['COUNT(*)']; ?>" />
+    <input type="hidden" id="b-athl-notim" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Athletics' AND implemented = 0 AND reviewed = 1;")['COUNT(*)']; ?>" />
     <input type="hidden" id="b-house-notim" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Housing' AND implemented = 0 AND reviewed = 1;")['COUNT(*)']; ?>" />
     <input type="hidden" id="b-safe-notim" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Safety' AND implemented = 0 AND reviewed = 1;")['COUNT(*)']; ?>" />
     <input type="hidden" id="b-other-notim" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Other' AND implemented = 0 AND reviewed = 1;")['COUNT(*)']; ?>" />
@@ -122,6 +125,7 @@
     <input type="hidden" id="f-studlife" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Student Life' AND class='Freshman';")['COUNT(*)']; ?>" />
     <input type="hidden" id="f-admin" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Administration' AND class='Freshman';")['COUNT(*)']; ?>" />
     <input type="hidden" id="f-acad" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Academics' AND class='Freshman';")['COUNT(*)']; ?>" />
+    <input type="hidden" id="f-athl" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Athletics' AND class='Freshman';")['COUNT(*)']; ?>" />
     <input type="hidden" id="f-house" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Housing' AND class='Freshman';")['COUNT(*)']; ?>" />
     <input type="hidden" id="f-safe" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Safety' AND class='Freshman';")['COUNT(*)']; ?>" />
     <input type="hidden" id="f-other" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Other' AND class='Freshman';")['COUNT(*)']; ?>" />
@@ -130,6 +134,7 @@
     <input type="hidden" id="s-studlife" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Student Life' AND class='Sophomore';")['COUNT(*)']; ?>" />
     <input type="hidden" id="s-admin" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Administration' AND class='Sophomore';")['COUNT(*)']; ?>" />
     <input type="hidden" id="s-acad" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Academics' AND class='Sophomore';")['COUNT(*)']; ?>" />
+    <input type="hidden" id="s-athl" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Athletics' AND class='Sophomore';")['COUNT(*)']; ?>" />
     <input type="hidden" id="s-house" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Housing' AND class='Sophomore';")['COUNT(*)']; ?>" />
     <input type="hidden" id="s-safe" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Safety' AND class='Sophomore';")['COUNT(*)']; ?>" />
     <input type="hidden" id="s-other" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Other' AND class='Sophomore';")['COUNT(*)']; ?>" />
@@ -138,6 +143,7 @@
     <input type="hidden" id="j-studlife" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Student Life' AND class='Junior';")['COUNT(*)']; ?>" />
     <input type="hidden" id="j-admin" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Administration' AND class='Junior';")['COUNT(*)']; ?>" />
     <input type="hidden" id="j-acad" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Academics' AND class='Junior';")['COUNT(*)']; ?>" />
+    <input type="hidden" id="j-athl" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Athletics' AND class='Junior';")['COUNT(*)']; ?>" />
     <input type="hidden" id="j-house" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Housing' AND class='Junior';")['COUNT(*)']; ?>" />
     <input type="hidden" id="j-safe" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Safety' AND class='Junior';")['COUNT(*)']; ?>" />
     <input type="hidden" id="j-other" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Other' AND class='Junior';")['COUNT(*)']; ?>" />
@@ -146,6 +152,7 @@
     <input type="hidden" id="n-studlife" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Student Life' AND class='Senior';")['COUNT(*)']; ?>" />
     <input type="hidden" id="n-admin" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Administration' AND class='Senior';")['COUNT(*)']; ?>" />
     <input type="hidden" id="n-acad" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Academics' AND class='Senior';")['COUNT(*)']; ?>" />
+    <input type="hidden" id="n-athl" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Athletics' AND class='Senior';")['COUNT(*)']; ?>" />
     <input type="hidden" id="n-house" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Housing' AND class='Senior';")['COUNT(*)']; ?>" />
     <input type="hidden" id="n-safe" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Safety' AND class='Senior';")['COUNT(*)']; ?>" />
     <input type="hidden" id="n-other" value="<?php echo getStat("SELECT COUNT(*) FROM suggestions WHERE category = 'Other' AND class='Senior';")['COUNT(*)']; ?>" />
@@ -199,7 +206,7 @@
     btx.canvas.width = 350;
     
     data = {
-    labels: ["Student Life", "Administration", "Academics", "Housing", "Safety", "Other"],
+    labels: ["Student Life", "Administration", "Academics", "Athletics", "Housing", "Safety", "Other"],
     datasets: [
             {
                 label: "All Suggestions",
@@ -211,6 +218,7 @@
                   $("#b-studlife").val(), 
                   $("#b-admin").val(), 
                   $("#b-acad").val(), 
+                  $("#b-athl").val(), 
                   $("#b-house").val(), 
                   $("#b-safe").val(), 
                   $("#b-other").val()
@@ -226,6 +234,7 @@
                   $("#b-studlife-im").val(), 
                   $("#b-admin-im").val(), 
                   $("#b-acad-im").val(), 
+                  $("#b-athl-im").val(), 
                   $("#b-house-im").val(), 
                   $("#b-safe-im").val(), 
                   $("#b-other-im").val()
@@ -241,6 +250,7 @@
                   $("#b-studlife-notim").val(), 
                   $("#b-admin-notim").val(), 
                   $("#b-acad-notim").val(), 
+                  $("#b-athl-notim").val(), 
                   $("#b-house-notim").val(), 
                   $("#b-safe-notim").val(), 
                   $("#b-other-notim").val()
@@ -255,7 +265,7 @@
     rtx.canvas.width = 350;
     
     data = {
-        labels: ["Student Life", "Administration", "Academics", "Housing", "Safety", "Other"],
+        labels: ["Student Life", "Administration", "Academics", "Athletics", "Housing", "Safety", "Other"],
         datasets: [
             {
                 label: "Freshman",
@@ -268,6 +278,7 @@
                 data: [$("#f-studlife").val(), 
                   $("#f-admin").val(), 
                   $("#f-acad").val(), 
+                  $("#f-athl").val(),
                   $("#f-house").val(), 
                   $("#f-safe").val(), 
                   $("#f-other").val()]
@@ -283,6 +294,7 @@
                 data: [$("#s-studlife").val(), 
                   $("#s-admin").val(), 
                   $("#s-acad").val(), 
+                  $("#s-athl").val(), 
                   $("#s-house").val(), 
                   $("#s-safe").val(), 
                   $("#s-other").val()]
@@ -297,7 +309,8 @@
                 pointHighlightStroke: "rgba(220,220,220,1)",
                 data: [$("#j-studlife").val(), 
                   $("#j-admin").val(), 
-                  $("#j-acad").val(), 
+                  $("#j-acad").val(),  
+                  $("#j-athl").val(),
                   $("#j-house").val(), 
                   $("#j-safe").val(), 
                   $("#j-other").val()]
@@ -313,6 +326,7 @@
                 data: [$("#n-studlife").val(), 
                   $("#n-admin").val(), 
                   $("#n-acad").val(), 
+                  $("#n-athl").val(), 
                   $("#n-house").val(), 
                   $("#n-safe").val(), 
                   $("#n-other").val()]

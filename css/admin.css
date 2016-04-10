@@ -171,3 +171,7 @@
 .no-placeholder .limbo-form label {
 	display: block;
 }
+
+.new-user-form{
+	text-align: center;
+}
