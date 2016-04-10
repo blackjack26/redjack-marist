@@ -14,7 +14,9 @@
                             $_POST['fname'], 
                             $_POST['lname'], 
                             $_POST['email'], 
-                            $_POST['category']);
+                            $_POST['category'],
+                            $_POST['class'],
+                            0);
             } else if(!isset($_POST['first_page'])){
                 header("Location: new_suggestion.php");
             }
@@ -33,6 +35,14 @@
         		
         	    <label for="lname">Last Name</label><br />
         		<input id="lname" class="form-control" name="lname" type="text" value="" size="40" /><br />
+        		 <label for="class">Are you a student?</label><br />
+        		<select name="class" class="form-control">
+        		    <option>No</option>
+                    <option>Freshman</option>
+                    <option>Sophomore</option>
+                    <option>Junior</option>
+                    <option>Senior</option>
+                </select><br />
         		
         		<label for="email">Email</label><br />
         		<input id="email" class="form-control" name="email" type="text" value="" size="40" /><br />

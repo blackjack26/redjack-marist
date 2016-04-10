@@ -6,11 +6,21 @@
         $suggestionData = getTrending();
     ?>
     <body>
+        <br />
+        <div id="search-box" class="input-group">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button id="search-btn" class="btn btn-default" type="button">Go!</button>
+          </span>
+        </div>
+        
+        <h3 id="msg-sub">Vote to help suggest!</h3>
+        
         <div id="suggestion-container">
             <?php
             while( $row = mysqli_fetch_array( $suggestionData, MYSQLI_ASSOC ) ){
             ?>
-                <div class="suggestion-box" data-content="<?= $row['content'] ?>" data-fname="<?= $row['fname'] ?>" data-lname="<?= $row['lname'] ?>" data-postdate="<?= $row['post_date'] ?>">
+                <div class="suggestion-box" data-title="<?= $row['title'] ?>" data-content="<?= $row['content'] ?>" data-fname="<?= $row['fname'] ?>" data-lname="<?= $row['lname'] ?>" data-postdate="<?= $row['post_date'] ?>">
                     <div class="rating-box">
                         <p class="up-rating" data-id="<?= $row['id'] ?>"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <num><?php echo $row['up']; ?></num></p>
                         <p class="down-rating" data-id="<?= $row['id'] ?>"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> <num><?php echo $row['down']; ?></num></p>
@@ -52,6 +62,15 @@
 </html>
 
 <script type="text/javascript">
+
+    $('#search-btn').click(function() {
+        var rex = new RegExp($(this).parent().prev().val(), 'i');
+
+        $(".suggestion-box").hide();
+        $(".suggestion-box").filter(function (){
+            return rex.test($(this).data("content")) || rex.test($(this).data("title"));
+        }).show();
+    });
 
     $(".suggestion-box").click(function(){
         var title = $(this).find(".suggestion-title").text();

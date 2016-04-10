@@ -2,14 +2,29 @@
    float: right;
 }
 
-#needs-review{
+#needs-review, #needs-review-btn{
    color: #f1c40f;
 }
 
-#not-implemented{
+#not-implemented, #not-implemented-btn{
     color: rgb(200, 100, 100);
 }
 
-#implemented{
+#implemented, #implemented-btn{
     color: rgb(100, 200, 100);
+}
+
+#filter-btn-container{
+    text-align: center;
+    margin-top: 15px;
+}
+
+#filter-btns a{
+    padding: 10px 15px;
+}
+
+@media only screen and (max-width: 720px){
+    #filter-btns #t{
+        display: none;
+    }
 }

@@ -84,12 +84,12 @@
     display: inline-block;
 }
 
-.rating-box .up-rating{
+.up-rating{
     color: #339933;
     cursor: pointer;
 }
 
-.rating-box .down-rating{
+.down-rating{
     color: #993333;
     cursor: pointer;
 }
@@ -146,6 +146,7 @@
     height: 100%;
     background-color: rgba(0,0,0,0.6);
     display: none;
+    z-index: 4;
 }
 
 #details-box{
@@ -176,4 +177,38 @@
 
 #details-box #content{
     margin-top: 20px;
+}
+
+#search-box{
+    margin: 10px;
+    z-index: 1;
+}
+
+#msg-sub{
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+}
+
+#feedback-chart{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#stats-table{
+    padding: 10px;
+}
+
+.chart-legend li{
+    list-style: none;
+}
+
+.chart-legend li span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.chart-legend .radar-legend{
+    padding-left: 0;
 }

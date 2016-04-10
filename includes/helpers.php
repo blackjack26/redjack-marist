@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ERROR);
 function addNewUser ( $infoArray ){
     global $dbc;
     
@@ -21,23 +21,33 @@ function addNewUser ( $infoArray ){
     }
 }
 
-function addFeedback($title, $content, $username, $suggestionId){
+function addFeedback($title, $content, $username, $suggestionId, $implemented){
     global $dbc;
     
-    $query = "INSERT INTO feedback VALUES (null, '$title', '$content', '$username', NOW(), '$suggestionId', null);";
+    $query = "INSERT INTO feedback VALUES (null, '$title', '$content', '$username', NOW(), '$suggestionId');";
     $results = mysqli_query($dbc, $query);
     
     if(!$results){
         echo 'Error Adding Feedback';
+    } else {
+        updateSuggestion($suggestionId, ($implemented == "on") ? 1 : 0);
     }
 }
 
-function addSuggestion($title, $content, $fname, $lname, $email, $category){
+function updateSuggestion($sid, $implemented){
     global $dbc;
     
-    $query = "INSERT INTO suggestions VALUES (null, '$title', '$content', NOW(), '$fname', '$lname', '$email', '$category', 0, 0, 0, 0);";
+    $query = "UPDATE suggestions SET reviewed = 1, implemented = $implemented WHERE id = $sid;";
     $results = mysqli_query($dbc, $query);
+}
+
+function addSuggestion($title, $content, $fname, $lname, $email, $category, $class, $duplicate){
+    global $dbc;
     
+    $sanitized = mysqli_real_escape_string($dbc, trim($content));
+    
+    $query = "INSERT INTO suggestions VALUES (null, '$title', '$sanitized', NOW(), '$fname', '$lname', '$email', '$category', 0, 0, 0, 0, '$class', $duplicate);";
+    $results = mysqli_query($dbc, $query);
     if(!$results){
         header("Location: index.php?success=false&msg=suggestion");
     } else {
@@ -45,19 +55,22 @@ function addSuggestion($title, $content, $fname, $lname, $email, $category){
     }
 }
 
+function suggestionDuplicate($sid){
+    global $dbc;
+    
+    $query = "UPDATE suggestions SET duplicate = 1 WHERE id = $sid;";
+    $results = mysqli_query($dbc, $query);
+}
+
 function addVote($uId, $sId, $up, $down){
     global $dbc;
     
-    $query = "INSERT INTO votes VALUES ($uId, $sId, $up, $down);";
+    $query = "INSERT INTO votes VALUES ($uId, $sId, $up, $down, NOW());";
     $results = mysqli_query($dbc, $query);
     
     if(!$results){
-        echo 'Error Adding Vote';
+        echo 'Error Adding Vote: ' . $query;
     }
-}
-
-function updateVote($uId, $sId, $up, $down){
-    
 }
 
 function voteExists($uId, $sId){
@@ -81,6 +94,24 @@ function getRecords( $table, $field, $value ){
     mysqli_free_result($results);
 }
 
+function getStat($query){
+    global $dbc;
+    $results = mysqli_query($dbc, $query);
+    if($results){
+        return mysqli_fetch_array($results, MYSQLI_ASSOC);
+    }
+    mysqli_free_result($results);
+}
+
+function getQuery($query){
+    global $dbc;
+    $results = mysqli_query($dbc, $query);
+    if($results){
+        return $results;
+    }
+    mysqli_free_result($results);
+}
+
 function getRecordsTable( $table ){
     global $dbc;
     $query = "SELECT * FROM $table";
@@ -94,7 +125,7 @@ function getRecordsTable( $table ){
 
 function getTrending(){
     global $dbc;
-    $query = "SELECT * FROM suggestions ORDER BY up DESC";
+    $query = "SELECT * FROM suggestions WHERE reviewed = 0 ORDER BY up DESC";
     $results = mysqli_query( $dbc, $query );
     if($results){
         return $results;
@@ -170,6 +201,7 @@ function adminLogin($login, $password){
 function logout(){
     if(isset($_SESSION['admin']) || isset($_SESSION['user'])){
         session_destroy();
+        
         header("Location: login.php");
         exit();
     }
@@ -178,7 +210,7 @@ function logout(){
 function getUserDataByUsername( $username ){
     global $dbc;
     
-    $query = 'SELECT id, fname, lname, email, role ' .
+    $query = 'SELECT id, fname, lname, email, role, division ' .
         'FROM users WHERE username="' . $username . '";';
     
     $results = mysqli_query( $dbc, $query );
@@ -191,7 +223,7 @@ function getUserDataByUsername( $username ){
 function getUserDataByEmail( $email ){
     global $dbc;
     
-    $query = 'SELECT id, fname, lname, email, role ' .
+    $query = 'SELECT id, fname, lname, email, role, division ' .
         'FROM users WHERE email="' . $email . '";';
     
     $results = mysqli_query( $dbc, $query );

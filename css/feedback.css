@@ -9,3 +9,8 @@
 .feed-remove{
     width: 100px;
 }
+
+.suggestion-box:hover{
+    background-color: rgba(255,255,255,0.3);
+    cursor: pointer;
+}

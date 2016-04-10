@@ -5,14 +5,18 @@
     require('includes/header.php');
     
     if($_SERVER['REQUEST_METHOD'] == 'GET'){
-        if($_GET['logout']){
+        if($_GET['logout'] == "true"){
             logout();
         }
     }
     
     if(hasAdminAccess()){
-        header("Location: feed.php");
-        exit();
+        if($_GET['logout'] == "true"){
+            logout();
+        } else {
+            header("Location: feed.php");
+            exit();
+        }
     }
     
     $error = "";
@@ -21,7 +25,6 @@
         if(isset($_POST['username']) && isset($_POST['password'])){
             $login = $_POST['username'];
             $password = $_POST['password'];
-            echo $login . " " + $password;
             $error = adminLogin($login, $password);
         }
     }

@@ -12,7 +12,8 @@
 }
 
 #signIn, #signOut{
-    position: fixed;
+    position: relative;
+    float: right;
     padding: 5px 15px;
     text-decoration: none;
     border: 1px solid rgba(0,0,0,0.9);
@@ -46,4 +47,28 @@ body{
     max-width: 550px;
     width: 100%;
     margin: 0 auto;
+}
+
+#mobile-menu{
+    width: auto;
+    left: 0px;
+    top: 5px;
+    position: relative;
+    float: left;
+}
+.burg{
+    font-size: 30px;
+    color: rgba(0,0,0,0.8);
+}
+#mobile-menu .caret{
+    color: rgba(0,0,0,0.8);
+}
+
+#mobile-menu{
+    z-index: 3;
+}
+
+#mobile-menu .dropdown-menu li a{
+    height: 35px;
+    padding-top: 6px;
 }
