@@ -52,7 +52,7 @@
                             <span class="glyphicon glyphicon-chevron-down"></span>
                         </button>
                         <ul class="dropdown-menu slidedown">
-                            <li class= "chat-list"><a href="discussion.php"><span class="glyphicon glyphicon-refresh">
+                            <li class= "chat-list"><a id="refresh-btn"><span class="glyphicon glyphicon-refresh">
                             </span>Refresh</a></li>
                         </ul>
                     </div>
@@ -103,6 +103,8 @@
             </div>
         </div>
     </div>
+    
+    <a class="btn btn-default" href="feed.php" role="button">Back</a>
 </div>
 <input type="hidden" id="user-id" value="<?= $currentUserId ?>" />
 <input type="hidden" id="sugg-id" value="<?= $sid ?>" />
@@ -111,10 +113,30 @@
 <input type="hidden" id="sugg-cat" value="<?= $category ?>" />
 <script>
     $("#btn-chat").click(function(){
-         post("discussion.php", { 
+         submitMsg();
+    });
+    
+    $("#btn-input").keypress(function(e){
+        if(e.which == 13){
+            submitMsg();
+            return false;
+        }
+    });
+    
+    function submitMsg(){
+        post("discussion.php", { 
             uid: $("#user-id").val(),
             sid: $("#sugg-id").val(),
             message: $("#btn-input").val(),
+            title: $("#sugg-title").val(),
+            category: $("#sugg-cat").val(),
+            content: $("#sugg-content").val()
+        }); 
+    }
+    
+    $("#refresh-btn").click(function(){
+         post("discussion.php", { 
+            id: $("#sugg-id").val(),
             title: $("#sugg-title").val(),
             category: $("#sugg-cat").val(),
             content: $("#sugg-content").val()
@@ -124,7 +146,7 @@
     $(function(){
         $("#my-panel-primary .panel-body").animate({ 
             scrollTop: $("#my-panel-primary .panel-body").prop("scrollHeight") - $("#my-panel-primary .panel-body").height() 
-        }, 1000); 
+        }, 0); 
     });
     
     function post(path, params, method) {
